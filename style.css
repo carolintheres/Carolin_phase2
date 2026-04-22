@@ -1,0 +1,102 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ff7e5f, #ff4b2b);
+    color: white;
+}
+
+/* Flexbox Layout */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background: lightgray;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* About Page */
+.page {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Form Styling */
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Media Queries (Responsive) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}
